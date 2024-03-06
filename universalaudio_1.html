@@ -1,6 +1,7 @@
 <div class="body">
-    <h1>Hi, I'm Roger. I specialize in music hardware UX, merging technology with intuitive design to bring conceptual hardware to life.</h1>
-    <p>Volume: <span id="volumeValue" class="current-value">0%</span></p>
+    <h1>Hi, I'm Roger.</h1>
+<h1>I specialize in music hardware UX, merging technology with intuitive design to bring conceptual hardware to life.</h1>
+
         <div class="knob-surround">
     
           <div id="knob" class="knob"></div>
@@ -12,6 +13,8 @@
         </div>
         <div class="now-playing">
             <p>Now Playing: Refractions -- Roger Vitek</p>
+        <p>Volume: <span id="volumeValue" class="current-value">0%</span></p>
+
         </div>
     </div>
 
@@ -32,7 +35,7 @@
       background-color: #5f5f5f;
       font-size: 100%;
       font-family: "Open Sans", sans-serif;
-      color: #bdbdbd;
+      color: #00ff73;
       text-align: center;
       user-select: none;
     }
@@ -51,7 +54,10 @@ background-color: #5f5f5f;
       height: 14em;
       border-radius: 50%;
       border: solid 0.25em #0e0e0e;
-      margin: 5em auto;
+      margin-bottom: 1.5em auto;
+      margin-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
       background: #181818;
       background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1d1d1d), color-stop(1, #131313));
       background: -ms-linear-gradient(bottom, #1d1d1d, #131313);
@@ -140,12 +146,16 @@ background-color: #5f5f5f;
     }
     h1 {
       font-weight: normal;
-      margin: 2em 0;
+      margin: 1em 0;
     }
     p {
       line-height: 150%;
       max-width: 36em;
-      margin: 1em auto;
+      margin-top: 1em auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+      opacity: 0.6;
     }
     a {
       color: #aaa;
@@ -220,7 +230,7 @@ background-color: #5f5f5f;
 
       //on mouse button release
       function onMouseUp()
-      {
+      {     
           document.removeEventListener(getMouseMove(), onMouseMove); //stop drag
       }
 
